@@ -2,34 +2,76 @@ Quicksort is a **divide-and-conquer** algorithm for sorting. It is efficient for
 
 ![[quicksort.png|700]]
 
-> **Algorithm:**
->    If array length is 1:
->        return
->    Else:
->        pick a *pivot*
->        partition array about pivot
->        recursively quicksort both partitions
->        return
+```
+If array length is 1:
+    return
+Else:
+    pick a *pivot*
+    partition array about pivot
+    recursively quicksort both partitions
+    return
+```
+
 
 #### Picking a pivot
 
 **First/Last Element:**
-- Simple to implement.
-- **Worst-case:** Occurs when the array is already sorted or reverse sorted, leading to highly unbalanced partitions.
+-> Simple to implement.
+-> **Worst-case:** Occurs when the array is already sorted or reverse sorted, leading to highly unbalanced partitions.
 
 **Random Element:**
-- Reduces the chance of worst-case scenarios.
-- Increases randomness in partitions.
+-> Reduces the chance of worst-case scenarios.
+-> Increases randomness in partitions.
 
 **Median of Three:**
-- Choose the median of the first, middle, and last elements.
-- Provides a better partitioning, reducing the likelihood of worst-case performance.
+-> Choose the median of the first, middle, and last elements.
+-> Provides a better partitioning, reducing the likelihood of worst-case performance.
 
 #### Partitioning about the pivot
 
 Once we have our pivot, we can partition the elements of the array such that:
-- All elements smaller than the pivot are to its left
-- All elements greater than the pivot are to its right
+-> All elements smaller than the pivot are to its left
+-> All elements greater than the pivot are to its right
+
+### Pseudocode
+```c
+Swap(int* a int* b)
+    temp = *a;
+    *a = *b;
+    *b = temp;
+End
+
+Partition(arr, low, high)
+    // Choose last element as pivot
+    pivot = arr[high]
+    
+    // Initialize index of smaller element
+    i = (low - 1)
+
+    For j From low To (high - 1) Do
+        If arr[j] < pivot Then
+            Increment i By 1
+            
+            // Swap elements at indices i and j if arr[j] is smaller than pivot
+            Swap(&arr[i], &arr[j])
+        End If
+    End For
+        
+    // Swap the found smaller element with the pivot at index 'i+1'
+    Swap(&arr[i + 1], &arr[high])
+    
+    Return (i + 1) // Return index of pivot
+    
+End
+
+QuickSort(arr, low, high)
+    If low < high Then
+        pivotIndex = Partition(arr, low, high)
+        QuickSort(arr, low, pivotIndex - 1)
+        QuickSort(arr, pivotIndex + 1, high)
+    End If
+End
+```
 
 > In this implementation, last element is picked as pivot.
 ```c
@@ -102,20 +144,17 @@ T(n) = Θ(nlogn)
 ```
 
 #### Space Complexity
-
-- **In-place Partitioning:** Quicksort does not require additional space for array storage.
-- **Auxiliary Space:** `O(logn)` in the call stack (recursion).
+-> **In-place Partitioning:** Quicksort does not require additional space for array storage.
+-> **Auxiliary Space:** `O(logn)` in the call stack (recursion).
 
 ## Pro/Con Analysis
 
-#### Advantages:
+**Advantages:**
+-> **Efficient:** Average case is `O(nlogn)`.
+-> **In-place:** Requires no additional space beyond recursion stack.
+-> **Tailorable:** Pivot selection can be optimized for the dataset.
 
-- **Efficient:** Average case is `O(nlogn)`.
-- **In-place:** Requires no additional space beyond recursion stack.
-- **Tailorable:** Pivot selection can be optimized for the dataset.
-
-#### Disadvantages:
-
-- **Worst-case Performance:** `O(n^2)`, though rare with good pivot selection.
-- **Not Stable:** Does not preserve the relative order of equal elements.
+**Disadvantages:**
+-> **Worst-case Performance:** `O(n^2)`, though rare with good pivot selection.
+-> **Not Stable:** Does not preserve the relative order of equal elements.
 

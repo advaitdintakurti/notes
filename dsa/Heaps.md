@@ -131,7 +131,6 @@ void HeapIncreaseKey(int A[], int i, int key) {
 ```
 
 ### Heap Sort
-[[Heap Sort]]
 ```c
 // Input: A: an (unsorted) array
 // Output: A modified to be sorted from smallest to largest
@@ -158,7 +157,7 @@ void HeapSort(int A[], int length) {
 // Output: The maximum element of A and A as a heap with this element removed
 // Running Time: O(log n) where n = heap-size[A]
 // extracts the maximum element from the heap and ensures the heap property is maintained
-int HeapExtractMax(int A[], int *heap_size) {
+int HeapExtractMax(int* A, int *heap_size) {
     int max = A[1];
     A[1] = A[*heap_size];
     (*heap_size)--;

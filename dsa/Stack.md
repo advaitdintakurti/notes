@@ -383,3 +383,17 @@ int main() {
     return 0;
 }
 ```
+
+---
+
+### Queue using two stacks
+-> **Enqueue:** Push the new element onto `stack1`
+-> **Dequeue:** If the second stack (`stack2`) is empty, move all elements from `stack1` to `stack2` by popping from `stack1` and pushing them onto `stack2`, and then pop the top element from `stack2`.
+
+Or you can do it the other way round. Depends on which operation you want to be more efficient.
+
+
+### Stack using two queues
+-> **Push:** Enqueue the element into `queue1`.
+-> **Pop:** Dequeue elements from `queue1` one by one and enqueue them into `queue2` until only one element remains, then dequeue the last element (this is the stack’s top element). Swap the roles of `queue1` and `queue2`.
+

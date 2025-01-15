@@ -19,6 +19,42 @@ Top down implementation of merge sort.
 - Recursively splits the array until single elements are reached.
 - Merges sorted arrays back up.
 
+### Pseudocode
+```c
+function mergeSort(arr)
+    if length of arr <= 1
+        return arr
+    
+    mid = length of arr // 2
+    left = mergeSort(arr[0 to mid-1])
+    right = mergeSort(arr[mid to end])
+    
+    return merge(left, right)
+
+function merge(left, right)
+    result = empty array
+    i = 0, j = 0
+    
+    while i < length of left and j < length of right
+        if left[i] <= right[j]
+            append left[i] to result
+            i = i + 1
+        else
+            append right[j] to result
+            j = j + 1
+    
+    // Append remaining elements
+    while i < length of left
+        append left[i] to result
+        i = i + 1
+    
+    while j < length of right
+        append right[j] to result
+        j = j + 1
+    
+    return result
+```
+
 #### Merge function
 
 Combines two sorted subarrays into a single sorted array:
@@ -92,3 +128,17 @@ T(n) = T(n/2) + T(n/2) + kn
 - **Space Complexity**: `O(n)`
 - **Stability**: Preserves the order of equal elements.
 - **Not In-Place**: Requires extra memory for temporary arrays.
+
+---
+
+### k-way merge sort vs two-way merge sort
+
+advantages of k-way merge sort
+-> more efficient with large datasets
+-> more scalable
+-> more flexible
+
+disadvantages
+-> harder to implement
+-> higher space requirements (same complexity though)
+-> overkill for small datasets
