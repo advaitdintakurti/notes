@@ -1,0 +1,201 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Stack",
+      "path": "dsa/Stack.md"
+    },
+    {
+      "basename": "Stacks",
+      "path": "dsa/Stacks.md"
+    },
+    {
+      "basename": "Trees",
+      "path": "dsa/Trees.md"
+    },
+    {
+      "basename": "Chapter 1",
+      "path": "cso/Chapter 1.md"
+    },
+    {
+      "basename": "byte-representation",
+      "path": "cso/media/byte-representation.png"
+    },
+    {
+      "basename": "endian",
+      "path": "cso/media/endian.png"
+    },
+    {
+      "basename": "hexadecimal",
+      "path": "cso/media/hexadecimal.png"
+    },
+    {
+      "basename": "multicore",
+      "path": "cso/media/multicore.png"
+    },
+    {
+      "basename": "multiprocessors",
+      "path": "cso/media/multiprocessors.png"
+    },
+    {
+      "basename": "index",
+      "path": "cso/index.md"
+    },
+    {
+      "basename": "Debugging",
+      "path": "cpro/Debugging.md"
+    },
+    {
+      "basename": "index",
+      "path": "dsa/index.md"
+    },
+    {
+      "basename": "Binary Search",
+      "path": "dsa/Binary Search.md"
+    },
+    {
+      "basename": "Microcontrollers",
+      "path": "iot/Microcontrollers.md"
+    },
+    {
+      "basename": "Lecture 1",
+      "path": "iot/Lecture 1.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "iot/Introduction.md"
+    },
+    {
+      "basename": "Sensors",
+      "path": "iot/Sensors.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "cso/Introduction.md"
+    },
+    {
+      "basename": "Information Storage",
+      "path": "cso/Information Storage.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "iot/Untitled.md"
+    },
+    {
+      "basename": "index",
+      "path": "cpro/index.md"
+    },
+    {
+      "basename": "Queue",
+      "path": "dsa/Queue.md"
+    },
+    {
+      "basename": "Linked List",
+      "path": "cpro/Linked List.md"
+    },
+    {
+      "basename": "Merge Sort",
+      "path": "dsa/Merge Sort.md"
+    },
+    {
+      "basename": "Syllabus",
+      "path": "cso/Syllabus.md"
+    },
+    {
+      "basename": "Radix Sort",
+      "path": "dsa/Radix Sort.md"
+    },
+    {
+      "basename": "index",
+      "path": "iot/index.md"
+    },
+    {
+      "basename": "Arduino Programming",
+      "path": "iot/Arduino Programming.md"
+    },
+    {
+      "basename": "canvas",
+      "path": "Excalidraw/canvas.md"
+    },
+    {
+      "basename": "Quicksort",
+      "path": "dsa/Quicksort.md"
+    },
+    {
+      "basename": "Introduction",
+      "path": "dsa/Introduction.md"
+    },
+    {
+      "basename": "Hashing",
+      "path": "dsa/Hashing.md"
+    },
+    {
+      "basename": "Type Casting",
+      "path": "cpro/Type Casting.md"
+    },
+    {
+      "basename": "Structures",
+      "path": "cpro/Structures.md"
+    },
+    {
+      "basename": "Strings",
+      "path": "cpro/Strings.md"
+    },
+    {
+      "basename": "Sorting Techniques",
+      "path": "cpro/Sorting Techniques.md"
+    },
+    {
+      "basename": "scanf()",
+      "path": "cpro/scanf().md"
+    },
+    {
+      "basename": "Recursion",
+      "path": "cpro/Recursion.md"
+    },
+    {
+      "basename": "printf()",
+      "path": "cpro/printf().md"
+    },
+    {
+      "basename": "Pointers",
+      "path": "cpro/Pointers.md"
+    },
+    {
+      "basename": "Memory Allocation",
+      "path": "cpro/Memory Allocation.md"
+    },
+    {
+      "basename": "Makefiles",
+      "path": "cpro/Makefiles.md"
+    },
+    {
+      "basename": "Loops",
+      "path": "cpro/Loops.md"
+    },
+    {
+      "basename": "Functions",
+      "path": "cpro/Functions.md"
+    },
+    {
+      "basename": "File IO",
+      "path": "cpro/File IO.md"
+    },
+    {
+      "basename": "Enums",
+      "path": "cpro/Enums.md"
+    },
+    {
+      "basename": "Data Types",
+      "path": "cpro/Data Types.md"
+    },
+    {
+      "basename": "Conditional Operators",
+      "path": "cpro/Conditional Operators.md"
+    },
+    {
+      "basename": "Bitwise Operators",
+      "path": "cpro/Bitwise Operators.md"
+    }
+  ],
+  "omittedPaths": []
+}

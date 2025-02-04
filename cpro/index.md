@@ -1,0 +1,29 @@
+### Notes
+[[Basics]]
+[[Makefiles]]
+[[Basic Operators]]
+[[Assignment]]
+[[Data Types]]
+[[printf()]]
+[[scanf()]]
+[[Loops]]
+[[Conditional Operators]]
+[[Bitwise Operators]]
+[[Type Casting]]
+[[Arrays]]
+[[Sorting Techniques]]
+[[Pointers]]
+[[Memory Allocation]]
+[[Functions]]
+[[Recursion]]
+[[Structures]]
+[[Enums]]
+[[Linked List]]
+[[Arguments]]
+[[File IO]]
+[[Multifile Programming]]
+[[Debugging]]
+### Materials:
+[2023](https://github.com/amoiba42/course-material-2k23/tree/main/resources/sem1/Cpro)
+[2022](https://github.com/zyx7k/course-material/tree/main/sem_1/Computer%20Programming)
+

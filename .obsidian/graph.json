@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:cpro  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:dsa  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:cso  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:iot  ",
+      "color": {
+        "a": 1,
+        "rgb": 5417696
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 1.25745498874719,
+  "lineSizeMultiplier": 2.36023068267067,
+  "collapse-forces": false,
+  "centerStrength": 0.46427231807952,
+  "repelStrength": 13.3664666166542,
+  "linkStrength": 1,
+  "linkDistance": 296,
+  "scale": 0.6810314859114145,
+  "close": true
+}

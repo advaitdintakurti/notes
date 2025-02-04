@@ -1,0 +1,13 @@
+{
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "accentColor": "",
+  "nativeMenus": false,
+  "baseFontSize": 16,
+  "showViewHeader": true,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "tweaks"
+  ],
+  "showRibbon": true
+}
