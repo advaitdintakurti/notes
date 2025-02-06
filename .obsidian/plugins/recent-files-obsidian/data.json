@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Stack",
-      "path": "dsa/Stack.md"
+      "basename": "Binary Search Trees",
+      "path": "dsa/Binary Search Trees.md"
     },
     {
-      "basename": "Stacks",
-      "path": "dsa/Stacks.md"
+      "basename": "Binary Search",
+      "path": "dsa/Binary Search.md"
     },
     {
       "basename": "Trees",
       "path": "dsa/Trees.md"
     },
     {
+      "basename": "History of Processors",
+      "path": "cso/History of Processors.md"
+    },
+    {
+      "basename": "Information Storage",
+      "path": "cso/Information Storage.md"
+    },
+    {
+      "basename": "Fenwick Trees",
+      "path": "dsa/Fenwick Trees.md"
+    },
+    {
+      "basename": "Stack",
+      "path": "dsa/Stack.md"
+    },
+    {
       "basename": "Chapter 1",
       "path": "cso/Chapter 1.md"
+    },
+    {
+      "basename": "Stacks",
+      "path": "dsa/Stacks.md"
     },
     {
       "basename": "byte-representation",
@@ -49,10 +69,6 @@
       "path": "dsa/index.md"
     },
     {
-      "basename": "Binary Search",
-      "path": "dsa/Binary Search.md"
-    },
-    {
       "basename": "Microcontrollers",
       "path": "iot/Microcontrollers.md"
     },
@@ -71,10 +87,6 @@
     {
       "basename": "Introduction",
       "path": "cso/Introduction.md"
-    },
-    {
-      "basename": "Information Storage",
-      "path": "cso/Information Storage.md"
     },
     {
       "basename": "Untitled",
@@ -187,14 +199,6 @@
     {
       "basename": "Data Types",
       "path": "cpro/Data Types.md"
-    },
-    {
-      "basename": "Conditional Operators",
-      "path": "cpro/Conditional Operators.md"
-    },
-    {
-      "basename": "Bitwise Operators",
-      "path": "cpro/Bitwise Operators.md"
     }
   ],
   "omittedPaths": []
