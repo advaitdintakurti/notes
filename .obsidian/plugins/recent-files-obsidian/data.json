@@ -1,28 +1,104 @@
 {
   "recentFiles": [
     {
-      "basename": "Binary Search Trees",
-      "path": "dsa/Binary Search Trees.md"
-    },
-    {
-      "basename": "Binary Search",
-      "path": "dsa/Binary Search.md"
-    },
-    {
-      "basename": "Trees",
-      "path": "dsa/Trees.md"
+      "basename": "Grading",
+      "path": "cso/Grading.md"
     },
     {
       "basename": "History of Processors",
       "path": "cso/History of Processors.md"
     },
     {
-      "basename": "Information Storage",
-      "path": "cso/Information Storage.md"
+      "basename": "Chapter 2",
+      "path": "cso/Chapter 2.md"
+    },
+    {
+      "basename": "def-twoscomp",
+      "path": "cso/media/def-twoscomp.png"
+    },
+    {
+      "basename": "def-unsigned",
+      "path": "cso/media/def-unsigned.png"
+    },
+    {
+      "basename": "data-types-64",
+      "path": "cso/media/data-types-64.png"
+    },
+    {
+      "basename": "data-types-32",
+      "path": "cso/media/data-types-32.png"
+    },
+    {
+      "basename": "arithmetic-operations-integer-data",
+      "path": "cso/media/arithmetic-operations-integer-data.png"
+    },
+    {
+      "basename": "shift-operations",
+      "path": "cso/media/shift-operations.png"
+    },
+    {
+      "basename": "boolean-algebra-3",
+      "path": "cso/media/boolean-algebra-3.png"
+    },
+    {
+      "basename": "boolean-algebra-2",
+      "path": "cso/media/boolean-algebra-2.png"
+    },
+    {
+      "basename": "boolean-algebra",
+      "path": "cso/media/boolean-algebra.png"
+    },
+    {
+      "basename": "machine-code-i-guess",
+      "path": "cso/media/machine-code-i-guess.png"
     },
     {
       "basename": "Fenwick Trees",
       "path": "dsa/Fenwick Trees.md"
+    },
+    {
+      "basename": "Heap Sort",
+      "path": "dsa/Heap Sort.md"
+    },
+    {
+      "basename": "Heaps",
+      "path": "dsa/Heaps.md"
+    },
+    {
+      "basename": "Binary Search Trees (BST)",
+      "path": "dsa/Binary Search Trees (BST).md"
+    },
+    {
+      "basename": "Trees",
+      "path": "dsa/Trees.md"
+    },
+    {
+      "basename": "Strings",
+      "path": "cpro/Strings.md"
+    },
+    {
+      "basename": "index",
+      "path": "cso/index.md"
+    },
+    {
+      "basename": "Pointers",
+      "path": "cpro/Pointers.md"
+    },
+    {
+      "basename": "index",
+      "path": "cpro/index.md"
+    },
+    {
+      "basename": "index",
+      "path": "dsa/index.md"
+    },
+    {
+      "basename": "Binary Search",
+      "path": "dsa/Binary Search.md"
+    },
+    {
+      "basename": "Hashing",
+      "path": "dsa/Hashing.md"
     },
     {
       "basename": "Stack",
@@ -31,10 +107,6 @@
     {
       "basename": "Chapter 1",
       "path": "cso/Chapter 1.md"
-    },
-    {
-      "basename": "Stacks",
-      "path": "dsa/Stacks.md"
     },
     {
       "basename": "byte-representation",
@@ -57,44 +129,12 @@
       "path": "cso/media/multiprocessors.png"
     },
     {
-      "basename": "index",
-      "path": "cso/index.md"
-    },
-    {
       "basename": "Debugging",
       "path": "cpro/Debugging.md"
     },
     {
-      "basename": "index",
-      "path": "dsa/index.md"
-    },
-    {
-      "basename": "Microcontrollers",
-      "path": "iot/Microcontrollers.md"
-    },
-    {
-      "basename": "Lecture 1",
-      "path": "iot/Lecture 1.md"
-    },
-    {
-      "basename": "Introduction",
-      "path": "iot/Introduction.md"
-    },
-    {
-      "basename": "Sensors",
-      "path": "iot/Sensors.md"
-    },
-    {
       "basename": "Introduction",
       "path": "cso/Introduction.md"
-    },
-    {
-      "basename": "Untitled",
-      "path": "iot/Untitled.md"
-    },
-    {
-      "basename": "index",
-      "path": "cpro/index.md"
     },
     {
       "basename": "Queue",
@@ -113,22 +153,6 @@
       "path": "cso/Syllabus.md"
     },
     {
-      "basename": "Radix Sort",
-      "path": "dsa/Radix Sort.md"
-    },
-    {
-      "basename": "index",
-      "path": "iot/index.md"
-    },
-    {
-      "basename": "Arduino Programming",
-      "path": "iot/Arduino Programming.md"
-    },
-    {
-      "basename": "canvas",
-      "path": "Excalidraw/canvas.md"
-    },
-    {
       "basename": "Quicksort",
       "path": "dsa/Quicksort.md"
     },
@@ -137,20 +161,12 @@
       "path": "dsa/Introduction.md"
     },
     {
-      "basename": "Hashing",
-      "path": "dsa/Hashing.md"
-    },
-    {
       "basename": "Type Casting",
       "path": "cpro/Type Casting.md"
     },
     {
       "basename": "Structures",
       "path": "cpro/Structures.md"
-    },
-    {
-      "basename": "Strings",
-      "path": "cpro/Strings.md"
     },
     {
       "basename": "Sorting Techniques",
@@ -169,10 +185,6 @@
       "path": "cpro/printf().md"
     },
     {
-      "basename": "Pointers",
-      "path": "cpro/Pointers.md"
-    },
-    {
       "basename": "Memory Allocation",
       "path": "cpro/Memory Allocation.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Functions",
       "path": "cpro/Functions.md"
-    },
-    {
-      "basename": "File IO",
-      "path": "cpro/File IO.md"
-    },
-    {
-      "basename": "Enums",
-      "path": "cpro/Enums.md"
-    },
-    {
-      "basename": "Data Types",
-      "path": "cpro/Data Types.md"
     }
   ],
   "omittedPaths": []

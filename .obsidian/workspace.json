@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f504e8bd0e8a5e07",
+        "id": "a8879e7201fb6088",
         "type": "tabs",
         "children": [
           {
-            "id": "c818e92f8eae6ceb",
+            "id": "340f329af3e3d7d9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -86,8 +86,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "clock",
+              "title": "Recent Files"
             }
           },
           {
@@ -104,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.5004348754883,
-    "collapsed": true
+    "width": 266.5004348754883
   },
   "right": {
     "id": "80228d6c3f7dabbc",
@@ -121,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "iot/Microcontrollers.md",
+                "file": "cso/Chapter 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Microcontrollers"
+              "title": "Backlinks for Chapter 2"
             }
           },
           {
@@ -140,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cso/Information Storage.md",
+                "file": "cso/Chapter 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Information Storage"
+              "title": "Outgoing links from Chapter 2"
             }
           },
           {
@@ -155,7 +154,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -167,10 +168,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cso/Information Storage.md"
+                "file": "cso/Chapter 2.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Information Storage"
+              "title": "Outline of Chapter 2"
             }
           }
         ]
@@ -189,49 +193,49 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "webpage-html-export:Export Vault to HTML": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c818e92f8eae6ceb",
+  "active": "340f329af3e3d7d9",
   "lastOpenFiles": [
-    "dsa/Binary Search Trees.md",
-    "dsa/Binary Search.md",
+    "cso/Grading.md",
+    "cso/History of Processors.md",
+    "cso/Chapter 2.md",
+    "cso/media/def-twoscomp.png",
+    "cso/media/def-unsigned.png",
+    "cso/media/data-types-64.png",
+    "cso/media/data-types-32.png",
+    "cso/media/arithmetic-operations-integer-data.png",
+    "cso/media/shift-operations.png",
+    "cso/media/boolean-algebra-3.png",
+    "cso/media/boolean-algebra-2.png",
+    "cso/media/boolean-algebra.png",
+    "cso/media/machine-code-i-guess.png",
+    "dsa/Fenwick Trees.md",
+    "dsa/Heap Sort.md",
+    "dsa/Heaps.md",
+    "dsa/Binary Search Trees (BST).md",
     "dsa/Trees.md",
+    "Excalidraw/canvas.md",
+    "cpro/Strings.md",
+    "cso/index.md",
+    "cpro/Pointers.md",
+    "cpro/index.md",
+    "iot/Introduction.md",
+    "iot/Microcontrollers.md",
+    "iot/Lecture 1.md",
+    "iot/Sensors.md",
+    "iot/Untitled.md",
+    "dsa/index.md",
+    "iot/index.md",
+    "dsa/Stacks.md",
+    "dsa/Binary Search.md",
+    "dsa/Hashing.md",
+    "dsa/Stack.md",
     "mom.md",
     "Untitled",
-    "cso/History of Processors.md",
-    "cso/Information Storage.md",
-    "dsa/Fenwick Trees.md",
-    "dsa/Stack.md",
     "cso/Chapter 1.md",
-    "dsa/Stacks.md",
-    "cso/media/byte-representation.png",
-    "ISS Class Activity - Shell.md",
-    "cso/media/endian.png",
-    "cso/media/hexadecimal.png",
-    "cso/media/multicore.png",
-    "cso/media/multiprocessors.png",
-    "Pasted image 20250117102628.png",
-    "Pasted image 20250117102614.png",
-    "cso/index.md",
-    "cpro/Debugging.md",
-    "dsa/index.md",
-    "iot/Lecture 1.md",
-    "iot/Microcontrollers.md",
-    "iot/Introduction.md",
-    "iot/Sensors.md",
-    "cso/Introduction.md",
-    "iot/Untitled.md",
-    "cpro/index.md",
-    "dsa/Queue.md",
-    "cpro/Linked List.md",
-    "dsa/Merge Sort.md",
-    "cso/Syllabus.md",
-    "dsa/Radix Sort.md",
-    "dsa/media/quicksort.png",
-    "dsa/media/radixsort.png",
-    "dsa/media/mergesort.png",
     "dsa/media",
     "cso/Chapter 1.html",
     "iss",

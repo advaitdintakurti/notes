@@ -92,4 +92,4 @@ printf("%p", *(arr + i) + j)
 - **Functionality**: Pointers enable the implementation of complex data structures (e.g., linked lists, trees) and functions that require dynamic memory.
 
 ---
-Next: [[Memory Allocation]]
+Next: [[Strings]]

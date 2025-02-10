@@ -23,4 +23,4 @@ int binsearch(int arr[], int low, int high, int x) {
 If we used binary search in insertion sort, the complexity is O(n^2) in every case, as opposed to only in the worst case.
 
 ---
-Next: [[Trees]]
+Next: [[Stack]]

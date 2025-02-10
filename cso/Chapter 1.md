@@ -276,4 +276,4 @@ The **instruction set architecture (ISA)** abstracts the complexity of processor
 4. **Virtual Machines:** Abstract entire computers, including hardware, operating systems, and applications. Originally introduced by IBM in the 1960s, virtual machines allow systems to run programs designed for different operating systems or versions, making them vital for modern computing environments.
 
 ---
-Next: [[Information Storage]]
+Next: [[Chapter 2]]

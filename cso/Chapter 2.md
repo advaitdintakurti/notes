@@ -6,10 +6,11 @@ Modern computers store and process information represented as two-valued signals
 - Reliably transmitted on noisy and inaccurate wires.
 
 ### Representing Numbers
+
 The three most important representations of numbers are:
-- **Unsigned**
-- **Two's Complement**
-- **Floating Point**
+- Unsigned
+- Two's Complement
+- Floating Point
 
 Computers implement arithmetic operations, such as addition and multiplication with these different representations of numbers.
 
@@ -19,6 +20,7 @@ Computers implement arithmetic operations, such as addition and multiplication w
 ---
 
 ## Information Storage
+
 Rather than accessing individual bits in memory, most computers use blocks of 8 bits, or **bytes**, as the smallest addressable unit of memory. 
 
 A machine-level program views memory as a very large array of bytes, referred to as **virtual memory**.    Every byte of memory is identified by a unique number, known as its **address**, and the set of all possible addresses is known as the **virtual address space**.
@@ -154,3 +156,118 @@ the most common being the ASCII character code.
 
 #### Representing Code
 
+```c
+int sum(int x, int y) {
+    return x + y;
+}
+```
+
+Corresponding machine code:
+![[machine-code-i-guess.png|800]]
+
+Instruction codings are generally different between different machine/OS types (so the binaries are not portable.) 
+
+From the perspective of the machine, a program is simply a sequence of bytes. The machine has no information about the original source program, except perhaps some auxiliary tables maintained to aid in debugging. 
+
+---
+
+## Boolean Algebra
+
+> Developed by George Boole in 19th Century
+
+Boole observed that by encoding logic values true and false as binary values 1 and 0, he could formulate an algebra that captures the basic principles of logical reasoning
+
+![[boolean-algebra.png]]
+We can extend the four Boolean operations to also operate on bit vectors (strings of zeros and ones of some fixed length w.) We define the operations over bit vectors according to their applications to the matching elements of the arguments
+
+Let a and b denote the bit vectors `[a_w−1, a_w−2, . . . , a_0]` and `[b_w−1, b_w−2, . . . , b_0]`, respectively. We define a & b to also be a bit vector of length w, where the i<sup>th</sup> element equals (a<sub>i</sub> & b<sub>i</sub>), for 0 ≤ i < w. The operations `|`, `^`, and `~` are extended to bit vectors in a similar fashion.
+
+![[boolean-algebra-2.png|800]]
+
+### Representing and Manipulating Sets
+
+We can encode any subset `{0, …, w–1}` with a bit vector `[a_w-1, a_w-2, …, a_0]`, where a<sub>i</sub> = 1 if and only if i ∈ A.
+
+#### Operations:
+- Intersection (Using `&`)
+- Union (Using `|`)
+- Symmetric Difference (Using `^`)
+- Complement (Using `~`)
+
+
+### Bit-Level Operations in C
+
+C supports bitwise boolean operations: `&` (AND), `|` (OR), `~` (NOT), `^` (XOR)
+
+These operations apply to any “integral” data type: `long`, `int`, `short`, `char`, `unsigned`. Arguments are viewed as bit vectors.
+
+![[boolean-algebra-3.png|800]]
+
+
+#### Bit-Level Masking Operations
+
+Masking is a technique used to isolate specific bits in a word. A common example is the mask `0xFF`, which selects the least significant byte (LSB). Applying `x & 0xFF` extracts the LSB while setting all other bytes to zero.
+
+For example, if `x = 0x89ABCDEF`, then `x & 0xFF` results in `0x000000EF`.
+
+To create a mask with all bits set to `1`, the expression `~0` is used. This is equivalent to `0xFFFFFFFF` in a 32-bit integer but remains more portable across different data sizes.
+
+
+### Logical Operations in C
+
+C provides logical operators `||` (or), `&&` (and), and `!` (not).
+
+Logical operations treat any nonzero argument as representing true and argument 0 as representing false. They return either 1 or 0, indicating a result of either true or false, respectively.
+
+Logical operators do not evaluate their second argument if the result of the expression can be determined by evaluating the first argument.
+> Ex. `a && 5/a` will never cause division by zero.
+
+
+### Shift Operations
+
+C also provides a set of shift operations for shifting bit patterns to the left and to the right.
+
+**Left Shift:** `x << y`
+- Shift bit-vector x left y positions
+- Throw away extra bits on left
+- Fill with 0’s on right
+
+**Right Shift:** `x >> y`
+- Shift bit-vector x right y positions
+- Throw away extra bits on right
+- Logical shift: Fill with 0’s on left
+- Arithmetic shift: Replicate the most significant bit on the left
+
+![[shift-operations.png|500]]
+
+The C standards do not precisely define which type of right shift should be used with signed numbers either arithmetic or logical shifts may be used. In practice, however, almost all compiler/machine combinations use arithmetic right shifts for signed data, and many programmers assume this to be the case. For unsigned data, on the other hand, right shifts must be logical.
+
+Undefined behavior may occur when shift amount < 0 or ≥ word size.
+
+On many machines, the shift instructions consider only the lower log2 w bits of the shift amount when shifting a w-bit value, and so the shift amount is computed as `k mod w`.
+
+---
+
+# Integer Representations
+
+C supports a variety of integral data types—ones that represent finite ranges of integers.
+
+![[data-types-32.png|600]]
+![[data-types-64.png|600]]
+
+#### Unsigned Encodings
+
+Nonnegative numbers are encoded based on binary notation. We write a bit vector as either x, to denote the entire vector, or as `[x_w−1, x_w−2, . . . , x_0]` to denote the individual bits within the vector. 
+
+![[def-unsigned.png|700]]
+
+
+#### Two's Complement Encoding
+
+Represents signed integers. This is done by interpreting the most significant bit of the word to have
+negative weight.
+
+![[def-twoscomp.png|700]]
+
+The most significant bit `x_w-1` is the sign bit, with a weight of `-2^(w-1)`
+> Regular bits (`x_i`) have a weight of  `2^i` btw

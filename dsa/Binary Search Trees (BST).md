@@ -42,29 +42,6 @@ Node* insert(Node* root, int key) {
 }
 ```
 
-#### Example
-
-```c
-Node* root = NULL;
-root = insert(root, 20);
-insert(root, 10);
-insert(root, 30);
-insert(root, 5);
-insert(root, 15);
-insert(root, 25);
-insert(root, 35);
-```
-
-**Tree Structure:**
-
-```
-        20
-       /  \
-     10    30
-    /  \   /  \
-   5   15 25  35
-```
-
 ---
 
 ### Searching
@@ -97,51 +74,6 @@ Node* findMax(Node* root) {
 
 ---
 
-## **Finding Predecessor and Successor**
-
-For a given node, its:
-
-- **Predecessor** is the largest value **smaller** than the node.
-- **Successor** is the smallest value **greater** than the node.
-
-```c
-Node* predecessor(Node* root, int key) {
-    Node* pred = NULL;
-    while (root) {
-        if (key > root->key) {
-            pred = root;
-            root = root->right;
-        } else {
-            root = root->left;
-        }
-    }
-    return pred;
-}
-
-Node* successor(Node* root, int key) {
-    Node* succ = NULL;
-    while (root) {
-        if (key < root->key) {
-            succ = root;
-            root = root->left;
-        } else {
-            root = root->right;
-        }
-    }
-    return succ;
-}
-```
-
-
-**BST Traversal in Ascending Order:**  
-`5 → 10 → 15 → 20 → 25 → 30 → 35`
-
-- `predecessor(20) = 15`, `successor(20) = 25`
-- `predecessor(30) = 25`, `successor(30) = 35`
-- `predecessor(5) = NULL`, `successor(5) = 10`
-
----
-
 ## **Deleting a Node in BST**
 
 1. **Leaf Node:** Delete it directly.
@@ -152,8 +84,10 @@ Node* successor(Node* root, int key) {
 Node* deleteNode(Node* root, int key) {
     if (!root) return root;
 
+    // search part
     if (key < root->key) root->left = deleteNode(root->left, key);
     else if (key > root->key) root->right = deleteNode(root->right, key);
+    // deletion part
     else {
         if (!root->left) {
             Node* temp = root->right;
@@ -174,25 +108,9 @@ Node* deleteNode(Node* root, int key) {
 }
 ```
 
-### **Example Deletion**
-
-```c
-root = deleteNode(root, 20);
-```
-
-**Tree after deleting 20:**
-
-```
-        25
-       /  \
-     10    30
-    /  \      \
-   5   15      35
-```
-
 ---
 
-## **Tree Traversals**
+## **Tree Traversals
 
 4. **Inorder (Left, Root, Right)** → Sorted Order
 5. **Preorder (Root, Left, Right)**
@@ -207,13 +125,27 @@ void inorder(Node* root) {
     printf("%d ", root->key);
     inorder(root->right);
 }
+
+void preorder(Node* root) {
+    if (!root) return;
+    printf("%d ", root->key);
+    preorder(root->left);
+    preorder(root->right);
+}
+
+void postorder(Node* root) {
+    if (!root) return;
+    postorder(root->left);
+    postorder(root->right);
+    printf("%d ", root->key);
+}
 ```
 
-### **Example Output**
 
-```c
-inorder(root);  // Output: 5 10 15 25 30 35
-```
+## **Balancing a BST**
+
+- Inorder traversal to make a sorted array
+- Construct a new (balanced) BST from the elements of the sorted array
 
 ---
 
@@ -256,6 +188,21 @@ int isBST(Node* root) {
 
 ---
 
-## **Conclusion**
+## Advantages of Binary Search Tree ****(BST)****:
 
-BSTs allow efficient insertion, deletion, and lookup. **Predecessor/successor** are useful for **sorted-order operations**, and **LCA** is essential for **relationship queries**. Balanced BSTs like **AVL Trees** maintain performance across different insertions.
+- **Efficient searching:** O(log n) time complexity for searching with a self balancing BST
+- **Ordered structure:** Elements are stored in sorted order, making it easy to find the next or previous element
+- **Dynamic insertion and deletion:** Elements can be added or removed efficiently
+- **Balanced structure:** Balanced BSTs maintain a logarithmic height, ensuring efficient operations
+- **Doubly Ended Priority Queue**: In BSTs, we can maintain both maximum and minimum efficiently
+
+## Disadvantages of Binary Search Tree ****(BST)****:
+
+- **Not self-balancing:** Unbalanced BSTs can lead to poor performance
+- **Worst-case time complexity:** In the worst case, BSTs can have a linear time complexity for searching and insertion
+- **Memory overhead:** BSTs require additional memory to store pointers to child nodes
+- **Not suitable for large datasets:** BSTs can become inefficient for very large datasets
+- **Limited functionality:** BSTs only support searching, insertion, and deletion operations
+
+---
+Next: [[Fenwick Trees]]

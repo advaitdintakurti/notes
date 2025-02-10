@@ -13,6 +13,7 @@
 [[Arrays]]
 [[Sorting Techniques]]
 [[Pointers]]
+[[Strings]]
 [[Memory Allocation]]
 [[Functions]]
 [[Recursion]]

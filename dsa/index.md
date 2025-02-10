@@ -8,3 +8,5 @@
 [[Sets and Maps]]
 [[Hashing]]
 [[Trees]]
+[[Binary Search Trees (BST)]]
+[[Fenwick Trees]]

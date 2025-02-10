@@ -140,3 +140,6 @@ We can also specify multiple delimiters like so:
 >     B. Not thread-safe (stores current location in static variable)
 >          Use `strtok_r` for multiple threads
 >     C. Not very versatile.
+
+---
+Next: [[Memory Allocation]]
