@@ -7,6 +7,3 @@
 Optional:
 - System calls // Intro to process control (8.2-8.4)
 - High level overview of virtual memory
-
----
-Next: [[Introduction]]

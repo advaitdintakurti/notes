@@ -383,6 +383,3 @@ int main() {
     return 0;
 }
 ```
-
----
-Next: [[Queue]]

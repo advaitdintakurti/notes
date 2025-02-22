@@ -175,6 +175,3 @@ int main() {
     return 0;
 }
 ```
-
----
-Next: [[Hashing]]

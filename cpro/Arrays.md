@@ -200,4 +200,4 @@ Base address of `arr[0][0]` is `100`
 
 
 ---
-Next: [[Sorting Techniques]]
+Next: [[Basic Sorting Algorithms]]

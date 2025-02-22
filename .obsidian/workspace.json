@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "a8879e7201fb6088",
+        "id": "50ffd9b4e3f0cc60",
         "type": "tabs",
         "children": [
           {
-            "id": "340f329af3e3d7d9",
+            "id": "072195e757b8628d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "cso/Chapter 3/Accessing Information.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Accessing Information"
+            }
+          },
+          {
+            "id": "cd5bf1a8df32cfb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "cso/Chapter 3/SET instructions and Conditional Branching.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SET instructions and Conditional Branching"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -71,16 +90,6 @@
             }
           },
           {
-            "id": "2bdf08af6c104afb",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
-          },
-          {
             "id": "8b96eef5831dcd50",
             "type": "leaf",
             "state": {
@@ -100,11 +109,13 @@
               "title": "Recent Files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 266.5004348754883
+    "width": 266.5004348754883,
+    "collapsed": true
   },
   "right": {
     "id": "80228d6c3f7dabbc",
@@ -186,6 +197,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -197,45 +209,47 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "340f329af3e3d7d9",
+  "active": "8b96eef5831dcd50",
   "lastOpenFiles": [
-    "cso/Grading.md",
-    "cso/History of Processors.md",
-    "cso/Chapter 2.md",
-    "cso/media/def-twoscomp.png",
-    "cso/media/def-unsigned.png",
-    "cso/media/data-types-64.png",
-    "cso/media/data-types-32.png",
-    "cso/media/arithmetic-operations-integer-data.png",
-    "cso/media/shift-operations.png",
-    "cso/media/boolean-algebra-3.png",
-    "cso/media/boolean-algebra-2.png",
-    "cso/media/boolean-algebra.png",
-    "cso/media/machine-code-i-guess.png",
-    "dsa/Fenwick Trees.md",
-    "dsa/Heap Sort.md",
-    "dsa/Heaps.md",
+    "Pasted image 20250221192702.png",
+    "Pasted image 20250221192241.png",
+    "cso/Assembly.md",
+    "cso/Chapter 3/Chapter 3.md",
+    "cso/Chapter 3/SET instructions and Conditional Branching.md",
+    "Pasted image 20250221192049.png",
+    "cso/Chapter 3/Processor State and Conditional Codes.md",
+    "cso/Chapter 3/Accessing Information.md",
     "dsa/Binary Search Trees (BST).md",
     "dsa/Trees.md",
-    "Excalidraw/canvas.md",
-    "cpro/Strings.md",
-    "cso/index.md",
-    "cpro/Pointers.md",
-    "cpro/index.md",
-    "iot/Introduction.md",
-    "iot/Microcontrollers.md",
-    "iot/Lecture 1.md",
-    "iot/Sensors.md",
-    "iot/Untitled.md",
     "dsa/index.md",
-    "iot/index.md",
-    "dsa/Stacks.md",
-    "dsa/Binary Search.md",
-    "dsa/Hashing.md",
+    "dsa/AVL Trees.md",
+    "dsa/Heaps.md",
+    "dsa/Heap Sort.md",
+    "dsa/Data Structures.md",
+    "dsa/Sorting Algorithms.md",
     "dsa/Stack.md",
-    "mom.md",
-    "Untitled",
-    "cso/Chapter 1.md",
+    "dsa/Sets and Maps.md",
+    "dsa/Quicksort.md",
+    "dsa/Queue.md",
+    "dsa/Merge Sort.md",
+    "dsa/Introduction.md",
+    "dsa/Hashing.md",
+    "dsa/Fenwick Trees.md",
+    "dsa/Binary Search.md",
+    "cpro/Basic Sorting Algorithms.md",
+    "Pasted image 20250220121623.png",
+    "Pasted image 20250219221935.png",
+    "Pasted image 20250219213333.png",
+    "Pasted image 20250219213302.png",
+    "cso/Chapter 3",
+    "cso/Chapter 1/Chapter 1.md",
+    "cso/Chapter 2.md",
+    "cso/Chapter 1",
+    "Pasted image 20250219182505.png",
+    "Pasted image 20250219182155.png",
+    "Pasted image 20250219182115.png",
+    "Pasted image 20250219095043.png",
+    "iiitmun",
     "dsa/media",
     "cso/Chapter 1.html",
     "iss",
@@ -243,8 +257,6 @@
     "iot/media",
     "cso/media",
     "cso",
-    "iot",
-    "dsa/Sets and Maps.html",
     "Untitled.canvas"
   ]
 }

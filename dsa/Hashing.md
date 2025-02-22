@@ -294,6 +294,3 @@ void delete(const char *key) {
 - **Rehashing:** Involves resizing the table and reinserting elements using the hash function to improve performance.
 - **Memory Management:** Proper memory allocation and deallocation are crucial in C to avoid memory leaks and undefined behavior.
 - **Collision Handling:** Choosing the appropriate collision resolution strategy depends on the use case and memory constraints.
-
----
-Next: [[Trees]]

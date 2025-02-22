@@ -89,6 +89,19 @@ void delete_tree(struct Node* root) {
 }
 ```
 
+### Find LCA (Binary Tree)
+```c
+Node* lcaBT(Node* root, int n1, int n2) {
+    if (!root) return NULL;
+    if (root->data == n1 || root->data == n2) return root;
+    Node* left = lcaBT(root->left, n1, n2);
+    Node* right = lcaBT(root->right, n1, n2);
+    if (left && right)
+        return root;
+    return (left) ? left : right;
+}
+```
+
 #### Binary Search Trees (BST) and Their Implementation
 
 A binary search tree (BST) is a binary tree with an additional constraint: the left subtree of any node contains values less than the node’s value, and the right subtree contains values greater than the node’s value. This property enables efficient searching, insertion, and deletion operations.
@@ -102,6 +115,7 @@ A binary search tree (BST) is a binary tree with an additional constraint: the l
 // BST node structure
 struct Node {
     int data;
+    struct Node* p; // pointer to parent, used when needed
     struct Node* left;
     struct Node* right;
 };
@@ -110,6 +124,7 @@ struct Node {
 struct Node* create_bst_node(int value) {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
     node->data = value;
+    node->p = NULL;
     node->left = NULL;
     node->right = NULL;
     return node;
@@ -187,23 +202,28 @@ Deleting a node from a BST involves three cases:
 
 ```c
 struct Node* delete(struct Node* root, int key) {
-    if (root == NULL) {
-        return root;
-    }
+    // nothing to delete
+    if (root == NULL) return root;
+
+    // search for node
     if (key < root->data) {
         root->left = delete(root->left, key);
     } else if (key > root->data) {
         root->right = delete(root->right, key);
+    // found the node
     } else {
+        // if no left subtree, replace with right subtree
         if (root->left == NULL) {
             struct Node* temp = root->right;
             free(root);
             return temp;
+        // if no right subtree, replace with left subtree
         } else if (root->right == NULL) {
             struct Node* temp = root->left;
             free(root);
             return temp;
         }
+        // if both subtrees exist, replace with successor
         struct Node* temp = find_min(root->right);
         root->data = temp->data;
         root->right = delete(root->right, temp->data);
@@ -278,5 +298,8 @@ int main() {
 }
 ```
 
----
-Next: [[Binary Search Trees (BST)]] 
+## Specialized Trees
+
+[[Binary Search Trees (BST)]]
+[[Fenwick Trees]]
+[[AVL Trees]]

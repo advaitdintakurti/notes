@@ -139,10 +139,5 @@ Iteration 4: {6, 7, 8, 9, 12} // Insert 8 into correct position
 - **Bubble Sort** is educational for learning, but inefficient for large datasets.
 - **Insertion Sort** is useful for nearly sorted arrays or small datasets and is stable.
 
-### Other sorting techniques
-
-[[Merge Sort]]
-[[Quicksort]]
-
 ---
 Next: [[Pointers]]

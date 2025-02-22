@@ -89,17 +89,20 @@ Node* deleteNode(Node* root, int key) {
     else if (key > root->key) root->right = deleteNode(root->right, key);
     // deletion part
     else {
+        // if no left subtree, replace with right subtree
         if (!root->left) {
             Node* temp = root->right;
             free(root);
             return temp;
         }
+        // if no right subtree, replace with left subtree
         if (!root->right) {
             Node* temp = root->left;
             free(root);
             return temp;
         }
 
+        // if both subtrees exist, replace with successor
         Node* temp = findMin(root->right);
         root->key = temp->key;
         root->right = deleteNode(root->right, temp->key);
@@ -110,7 +113,7 @@ Node* deleteNode(Node* root, int key) {
 
 ---
 
-## **Tree Traversals
+## Tree Traversals
 
 4. **Inorder (Left, Root, Right)** → Sorted Order
 5. **Preorder (Root, Left, Right)**
@@ -141,15 +144,9 @@ void postorder(Node* root) {
 }
 ```
 
-
-## **Balancing a BST**
-
-- Inorder traversal to make a sorted array
-- Construct a new (balanced) BST from the elements of the sorted array
-
 ---
 
-## **Finding Lowest Common Ancestor (LCA)**
+### Finding Lowest Common Ancestor (LCA)
 
 LCA of two nodes is the deepest node that has both in its subtrees.
 
@@ -170,39 +167,82 @@ Node* ancestor = LCA(root, 5, 15);  // Returns node with key 10
 
 ---
 
-## **Checking if a Tree is a BST**
-
-A valid BST must satisfy `min < root < max` at every node.
-
+### Find Height of BST
 ```c
-int isBSTUtil(Node* root, int min, int max) {
-    if (!root) return 1;
-    if (root->key <= min || root->key >= max) return 0;
-    return isBSTUtil(root->left, min, root->key) && isBSTUtil(root->right, root->key, max);
-}
-
-int isBST(Node* root) {
-    return isBSTUtil(root, -2147483648, 2147483647);
+int height(Node* root) {
+    if (!root) return -1;
+    int leftHeight = height(root->left);
+    int rightHeight = height(root->right);
+    return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);
 }
 ```
 
 ---
 
-## Advantages of Binary Search Tree ****(BST)****:
+### Checking if a Tree is a BST
 
-- **Efficient searching:** O(log n) time complexity for searching with a self balancing BST
-- **Ordered structure:** Elements are stored in sorted order, making it easy to find the next or previous element
-- **Dynamic insertion and deletion:** Elements can be added or removed efficiently
-- **Balanced structure:** Balanced BSTs maintain a logarithmic height, ensuring efficient operations
-- **Doubly Ended Priority Queue**: In BSTs, we can maintain both maximum and minimum efficiently
+A valid BST must satisfy `min < root < max` at every node.
 
-## Disadvantages of Binary Search Tree ****(BST)****:
+```c
+#include <limits.h>
+#include <stdbool.h>
 
-- **Not self-balancing:** Unbalanced BSTs can lead to poor performance
-- **Worst-case time complexity:** In the worst case, BSTs can have a linear time complexity for searching and insertion
-- **Memory overhead:** BSTs require additional memory to store pointers to child nodes
-- **Not suitable for large datasets:** BSTs can become inefficient for very large datasets
-- **Limited functionality:** BSTs only support searching, insertion, and deletion operations
+bool isBSTUtil(Node* node, int min, int max) {
+    if (node == NULL)
+        return true;
+    if (node->data <= min || node->data >= max)
+        return false;
+    return isBSTUtil(node->left, min, node->data) &&
+           isBSTUtil(node->right, node->data, max);
+}
+
+bool isBST(Node* root) {
+    return isBSTUtil(root, INT_MIN, INT_MAX);
+}
+```
 
 ---
-Next: [[Fenwick Trees]]
+
+### Find the kth smallest element
+```c
+void kthSmallestUtil(Node* root, int k, int* count, int* result) {
+    if (root == NULL || *count >= k)
+        return;
+    kthSmallestUtil(root->left, k, count, result);
+    (*count)++;
+    if (*count == k) {
+        *result = root->data;
+        return;
+    }
+    kthSmallestUtil(root->right, k, count, result);
+}
+
+int kthSmallest(Node* root, int k) {
+    int count = 0, result = -1;
+    kthSmallestUtil(root, k, &count, &result);
+    return result;
+}
+```
+
+---
+
+### Check if the tree is balanced
+```c
+int height(Node* node) {
+    if (node == NULL)
+        return 0;
+    int lh = height(node->left);
+    int rh = height(node->right);
+    return (lh > rh ? lh : rh) + 1;
+}
+
+bool isBalanced(Node* root) {
+    if (root == NULL)
+        return true;
+    int lh = height(root->left);
+    int rh = height(root->right);
+    if (abs(lh - rh) > 1)
+        return false;
+    return isBalanced(root->left) && isBalanced(root->right);
+}
+```

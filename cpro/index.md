@@ -11,7 +11,7 @@
 [[Bitwise Operators]]
 [[Type Casting]]
 [[Arrays]]
-[[Sorting Techniques]]
+[[Basic Sorting Algorithms]]
 [[Pointers]]
 [[Strings]]
 [[Memory Allocation]]

@@ -1,6 +1,6 @@
 [[Grading]]
 [[Syllabus]]
-[[Introduction]]
+[[cso/Introduction]]
 
 **Chapter 1:** 
 [[Chapter 1]]
@@ -9,4 +9,4 @@
 2.1 - [[Chapter 2]]
 
 **Chapter 3:**
-[[History of Processors]]
+[[Chapter 3]]

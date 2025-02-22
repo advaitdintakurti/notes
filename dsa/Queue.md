@@ -251,6 +251,3 @@ int main() {
     return 0;
 }
 ```
-
----
-Next: [[Sets and Maps]]

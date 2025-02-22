@@ -10,6 +10,3 @@
 #### Operating Systems
 
 Software that performs basic tasks like file management, memory management, process management, I/O handling, and controls peripheral devices. Acts as an interface between the user and the computer.
-
----
-Next: [[Chapter 1]]
